@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vacation Picker</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/jquery-3.0.0.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Answer the following questions and we'll let you know where you should vacation next!</h1>
+      <div id="blanks">
+
+        <form>
+
+          <label for="quest1">How old are you?</label>
+          <input id="quest1" class="form-control" type="text">
+
+          <label for="quest2">Do you enjoy temperate or tropical climates?</label>
+          <select class="form-control" id="quest2">
+            <option>Temperate</option>
+            <option>Tropical</option>
+          </select>
+
+          <label for="quest3">Do you enjoy hiking and climbing?</label>
+          <select class="form-control" id='quest3'>
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+
+          <label for="quest4">Do you like beaches or forests more?</label>
+          <select class="form-control" id='quest4'>
+            <option>Beaches</option>
+            <option>Forests</option>
+            <option>I would like both</option>
+          </select>
+
+          <label for="quest5">Are beatiful sunsets and sunrises important for your vacation spot?</label>
+          <select class="form-control" id="quest5">
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+
+          <div class="centered">
+          <button type="submit" class="btn">GO!!</button>
+          </div>
+        </form>
+
+        <br>
+        <div id="output"></div>
+        <br>
+      </div>
+      <div id="equilateral">
+        <img src="img/equilateral.png" alt="a picture of an equilateral triangle"/>
+      </div>
+      <div id="scalene">
+        <img src="img/scalene.jpg" alt="a picture of a scalene triangle"/>
+      </div>
+      <div id="isosceles">
+        <img src="img/isosceles.png" alt="a picture of an isosceles triangle"/>
+      </div>
+      <div id="bomb">
+        <img src="img/bomb.jpg" alt="a picture of a bomb"/>
+      </div>
+    </div>
+  </body>
+</html>
