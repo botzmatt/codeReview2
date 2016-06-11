@@ -14,57 +14,72 @@
     <div class="container">
       <h1>Answer the following questions and we'll let you know where you should vacation next!</h1>
       <div id="blanks">
-
+      <div class='col-sm-4'>
         <form>
+          <div class="form-group">
+            <label for="quest1">How old are you?</label>
+            <input id="quest1" class="form-control" type="text">
+          </div>
 
-          <label for="quest1">How old are you?</label>
-          <input id="quest1" class="form-control" type="text">
-
-          <label for="quest2">Do you enjoy temperate or tropical climates?</label>
-          <select class="form-control" id="quest2">
-            <option>Temperate</option>
-            <option>Tropical</option>
-          </select>
-
-          <label for="quest3">Do you enjoy hiking and climbing?</label>
-          <select class="form-control" id='quest3'>
-            <option>Yes</option>
-            <option>No</option>
-          </select>
-
-          <label for="quest4">Do you like beaches or forests more?</label>
-          <select class="form-control" id='quest4'>
-            <option>Beaches</option>
-            <option>Forests</option>
-            <option>I would like both</option>
-          </select>
-
-          <label for="quest5">Are beatiful sunsets and sunrises important for your vacation spot?</label>
-          <select class="form-control" id="quest5">
-            <option>Yes</option>
-            <option>No</option>
-          </select>
-
+          <div class="form-group">
+            <label for="quest2">Do you enjoy temperate or tropical climates?</label>
+            <select class="form-control" id="quest2">
+              <option>Temperate</option>
+              <option>Tropical</option>
+            </select>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="quest3">Do you enjoy hiking or climbing more?</label>
+            <select class="form-control" id='quest3'>
+              <option>Hiking</option>
+              <option>Climbing</option>
+              <option>Neither</option>
+            </select>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="quest4">Are beaches or forests more important?</label>
+            <select class="form-control" id='quest4'>
+              <option>Beaches</option>
+              <option>Forests</option>
+              <option>I would like both</option>
+            </select>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="quest5">Are beatiful sunsets and sunrises important for your vacation spot?</label>
+            <select class="form-control" id="quest5">
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+          </div>
+          <br>
           <div class="centered">
           <button type="submit" class="btn">GO!!</button>
           </div>
         </form>
-
+      </div>
         <br>
         <div id="output"></div>
         <br>
       </div>
-      <div id="equilateral">
-        <img src="img/equilateral.png" alt="a picture of an equilateral triangle"/>
+      <div id="beach">
+        <img src="img/kamalame.jpg" alt="an overview shot of Kamalame Cay"/>
+        <br>
+        <a href="http://www.kamalame.com/" target="_blank">Kamalame Cay, Bahamas</a>
       </div>
-      <div id="scalene">
-        <img src="img/scalene.jpg" alt="a picture of a scalene triangle"/>
+      <div id="beachandforest">
+        <img src="img/mackinac.jpg" alt="a picture depicting shots from a hiking path that shows both beatiful forests and beaches"/>
+        <a href="http://www.mackinacparks.com/parks-and-attractions/mackinac-island-state-park/" target="_blank">Mackinac State Park</a>
       </div>
-      <div id="isosceles">
-        <img src="img/isosceles.png" alt="a picture of an isosceles triangle"/>
+      <div id="sunsetForest">
+        <img src="img/lakeannecy.jpg" alt="picture of a beautiful sunset in the forest off the Alps with Lake Annecy depicted"/>
+        <a href="http://en.lac-annecy.com/" target="_blank">Lake Annecy, French Alps</a>
       </div>
-      <div id="bomb">
-        <img src="img/bomb.jpg" alt="a picture of a bomb"/>
+      <div id="sunsetBeach">
+        <img src="img/puglia.jpg" alt="a picture of a bomb"/>
+        <a href="http://www.viaggiareinpuglia.it/puglia/PE0/en/PUGLIA" target="_blank">Puglia, Italy</a>
       </div>
     </div>
   </body>
