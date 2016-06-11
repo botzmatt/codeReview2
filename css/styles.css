@@ -1,3 +1,8 @@
-#beachandforest, #beach, #sunsetForest, #sunsetBeach, #hiking, #climbing {
+#beachandforest, #beach, #sunsetForest, #sunsetBeach, #hiking, #climbing, #arctic {
   display: none;
+}
+
+img {
+  max-width: 600px;
+  max-height: inherit;
 }

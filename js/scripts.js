@@ -6,5 +6,7 @@ $(document).ready(function() {
     var answer3 = $("#quest4").val();
     var answer4 = $("#quest5").val();
     var result;
+
+
   });
 });
