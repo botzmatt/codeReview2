@@ -10,7 +10,9 @@ $(document).ready(function() {
 
     if (answer1 === "Tropical") {
       result = "Kamalame Cay, Bahamas.";
-    } else if (answer3 === "Forests" && answer4 === "No") {
+    } else if (answer1 === "Arctic") {
+      result = "Arctic Express, Greenland.";
+      }else if (answer3 === "Forests" && answer4 === "No") {
       result = "Mackinac State Park, Michigan.";
     } else if (answer3 === "Forests" && answer4 === "Yes") {
       result = "Lake Annecy, French Alps.";
@@ -20,8 +22,6 @@ $(document).ready(function() {
       result = "the Pacific Crest, West Coast, USA.";
     } else if (answer2 === "Climbing" && answer3 === "Forests") {
       result = "Baraga, Michigan.";
-    } else if (answer1 === "Arctic") {
-      result = "Arctic Express, Greenland.";
     };
 
     $("#output").text(name + ", your optimal destination is " + result);
