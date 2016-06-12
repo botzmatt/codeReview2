@@ -1,6 +1,6 @@
 $(document).ready(function() {
-  $("form").submit(function() {
-    event.preventDefault();
+  $("form").submit(function(event) {
+
     var name = $("quest0").val();
     var answer1 = $("#quest2").val();
     var answer2 = $("#quest3").val();
@@ -8,21 +8,21 @@ $(document).ready(function() {
     var answer4 = $("#quest5").val();
     var result;
 
-    if (answer1 = "Tropical" && answer2 === "Neither" || answer2 === "Hiking" && answer3 === "Beaches" && answer4 === "Yes" || answer4 === "No" || answer4 === "Yes") {
+    if (answer1 === "Tropical") {
       result = "Kamalame Cay, Bahamas.";
-    } else if (answer1 === "Temperate" && answer2 === "Hiking" && answer3 === "I would like both" || answer3 === "Forests" || answer3 === "Beaches" && answer4 === "No" || answer4 = "Yes") {
+    } else if (answer3 === "Forests" && answer4 === "No") {
       result = "Mackinac State Park, Michigan.";
-    } else if (answer1 === "Temperate" && answer2 === "Hiking" && answer3 === "Forests" || answer3 === "Beaches" || answer3 === "I would like both" && answer4 === "Yes") {
+    } else if (answer3 === "Forests" && answer4 === "Yes") {
       result = "Lake Annecy, French Alps.";
-    } else if () {
+    } else if (answer1 != "Tropical" && answer3 === "Beaches" && answer4 === "Yes") {
       result = "Puglia, Italy.";
-    } else if () {
-      result = "the Pacific Crest, West Coast, USA."
-    } else if () {
-      result = "Baraga, Michigan."
-    } else if () {
-      result = "Arctic Express, Greenland."
-    }
+    } else if (answer2 === "Hiking" && answer3 === "Forests" && answer4 === "Yes" || answer2 === "Hiking" && answer4 === "No") {
+      result = "the Pacific Crest, West Coast, USA.";
+    } else if (answer2 === "Climbing" && answer3 === "Forests") {
+      result = "Baraga, Michigan.";
+    } else if (answer1 === "Arctic") {
+      result = "Arctic Express, Greenland.";
+    };
 
     $("#output").text(name + ", your optimal destination is " + result);
 
@@ -47,6 +47,7 @@ $(document).ready(function() {
     } else if (result === "Arctic Express, Greenland.") {
       $("#beach, #arctic, #beachandforest, #sunsetForest, #sunsetBeach, #hiking, #climbing").hide();
       $("#arctic").show();
-    }
+    };
+    event.preventDefault();
   });
 });
