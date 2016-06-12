@@ -12,6 +12,7 @@ This website is designed to help the user find a destination for their next vaca
 ## Tools Used:
 * HTML
 * JavaScript
+* JQuery
 * CSS
 * Bootstrap
 
