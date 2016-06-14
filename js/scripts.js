@@ -1,11 +1,11 @@
 $(document).ready(function() {
   $("form").submit(function(event) {
 
-    var name = $("quest0").val();
-    var answer1 = $("#quest2").val();
-    var answer2 = $("#quest3").val();
-    var answer3 = $("#quest4").val();
-    var answer4 = $("#quest5").val();
+    var name = $("#question0").val();
+    var answer1 = $("#question2").val();
+    var answer2 = $("#question3").val();
+    var answer3 = $("#question4").val();
+    var answer4 = $("#question5").val();
     var result;
 
     if (answer1 === "Tropical") {
